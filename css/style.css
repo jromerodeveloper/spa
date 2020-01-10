@@ -1,0 +1,156 @@
+html{
+    font-size:14px;
+    font-family: sans-serif;
+}
+/* 
+Chat page
+*/
+.container{
+    display: flex;
+    grid-template-columns: 240px 1fr;
+    height: 100vh;
+}
+.sidebar-container{
+    background: darkslategray;
+    padding: 1rem;
+    color: #fff;
+    font-size:14px;
+    display: grid;
+    grid-auto-rows: 55px 1fr 30px;
+}
+.sidebar-container h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted darkslategray;   
+}
+.user{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+.user--name{
+    color: #fff;
+}
+.user--status{
+    color: #fff;
+    font-style: italic;
+    font-size: .85rem;
+    line-height: 1.75;
+}
+.account{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.account a:hover{
+    background: darkslateblue;
+}
+.account a{
+    background: darkorange;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a{
+    padding: .5rem 0;
+}
+.brand{
+    text-align:center;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted darkslategray;
+}
+.brand img{
+    max-width: 120px;
+}
+.main-container{
+    display: grid;
+    grid-template-rows: 88px 1fr 50px;
+}
+.chat-details{
+    border-bottom: 1px dotted darkslategray;
+    padding: 0 1rem;
+}
+.chat-details h1{
+    font-size:1.75rem;
+    margin: 1rem 0 0 0;
+    color: #000;
+}
+.chat-details span{
+    color: darkslategray;
+}
+.messages-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+.message{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.message--avatar{
+    padding: 0 1rem;
+}
+.message--avatar img{
+    width: 60%;
+}
+.message--user{
+    color: darkslategray;
+    margin-bottom: .25rem;
+}
+.message-form{
+    display: flex;
+}
+.message-form--text{
+    flex-grow: 2;
+    height: 50px;
+    padding: 0 0 0 1rem;
+    margin: 0;
+    border:none;
+    border-top:1px dotted darkslategray;
+    color: darkslategray;
+}
+.message-form--submit{
+    background: #000;
+    color: #fff;
+    border:none;
+    min-width: 80px;
+}
+/* 
+Login Page
+*/
+
+.login-page{
+    background: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-container{
+    padding: 3rem;
+    border: 1px solid gainsboro;
+    border-radius: 1rem;
+    background: #000;
+}
+.brand-login{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.brand-login img{
+    max-width: 250px;
+}
+.form-login input{
+    margin-bottom: 1.5rem;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+.form-login--submit{
+    background: gold;
+    color: #000;
+    padding: 0 2rem;
+}
